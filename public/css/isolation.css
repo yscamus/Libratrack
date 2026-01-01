@@ -1,0 +1,19 @@
+﻿/* Prevent Bootstrap/Tailwind conflicts */
+body.booksaw-template *,
+body.booksaw-template *::before,
+body.booksaw-template *::after {
+    box-sizing: border-box;
+}
+
+body.booksaw-template .container {
+    width: 100%;
+}
+
+body.booksaw-template button,
+body.booksaw-template [type='button'],
+body.booksaw-template [type='reset'],
+body.booksaw-template [type='submit'] {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}

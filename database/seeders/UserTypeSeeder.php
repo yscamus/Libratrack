@@ -1,0 +1,19 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\UserType;
+
+class UserTypeSeeder extends Seeder
+{
+    public function run(): void
+    {
+        UserType::insert([
+            ['name' => 'Student'],
+            ['name' => 'Faculty'],
+            ['name' => 'Librarian'],
+            ['name' => 'Researcher'],
+        ]);
+    }
+}
